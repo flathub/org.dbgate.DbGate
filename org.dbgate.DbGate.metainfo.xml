@@ -6,7 +6,7 @@
     <summary>(no)SQL database client</summary>
 
     <metadata_license>CC0-1.0</metadata_license>
-    <project_license>MIT</project_license>
+    <project_license>GPL</project_license>
     <developer_name>Jan Prochazka</developer_name>
 
     <description>
@@ -34,6 +34,7 @@
     <content_rating type="oars-1.1"/>
 
     <releases>
+        <release version="5.5.4" date="2024-10-08"/>
         <release version="5.3.0" date="2024-06-17"/>
         <release version="5.2.8" date="2024-05-17"/>
         <release version="5.2.7" date="2024-05-13"/>
