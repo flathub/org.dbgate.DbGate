@@ -60,7 +60,7 @@ modules:
         only-arches: [aarch64]
 
         url: https://github.com/dbgate/dbgate/releases/download/v5.5.4/dbgate-5.5.4-linux_arm64.AppImage
-        sha256: a044f079377feb993ac2b0fdd26641f52480d5a27fababb56f2a4e237c69faaf
+        sha256: c7397311b91fe8f26be53ed4c3e224d9441e19a8d3a63dee82abdb44e9b8a811
         dest-filename: dbgate.AppImage
 
       - type: file
