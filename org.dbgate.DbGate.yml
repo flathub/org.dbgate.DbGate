@@ -1,9 +1,9 @@
 app-id: org.dbgate.DbGate
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: "24.08"
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '23.08'
+base-version: "24.08"
 command: dbgate
 rename-icon: dbgate
 finish-args:
@@ -51,21 +51,19 @@ modules:
     sources:
       - type: file
         only-arches: [x86_64]
-        url: https://github.com/dbgate/dbgate/releases/download/v6.1.4/dbgate-6.1.4-linux_x86_64.AppImage
-        # url: file:///home/jena/jenasoft/dbgate/app/dist/dbgate-5.0.0-alpha.1-linux_x86_64.AppImage
-        sha256: 0236fe539d0be4d2c081cfcabcb4b928dfe32f253b12e071d377d1b3d6ee70e5
+        url: https://github.com/dbgate/dbgate/releases/download/v6.3.3/dbgate-6.3.3-linux_x86_64.AppImage
+        sha512: 50990780e7b92221e7e8c5ad35961a5e6735173013690d8c3f96a77f8d639ba2e7c07b6acfce879df45b822f7b7b0031ad1cb23ae62a564368ec6aa7e5b63ba6
         dest-filename: dbgate.AppImage
-        
+
       - type: file
         only-arches: [aarch64]
 
-        url: https://github.com/dbgate/dbgate/releases/download/v6.1.4/dbgate-6.1.4-linux_arm64.AppImage
-        sha256: 3f594fa1361fb3365565dc0d0e3b93b761f8327d83fa91049dfb90886ab2187a
+        url: https://github.com/dbgate/dbgate/releases/download/v6.3.3/dbgate-6.3.3-linux_arm64.AppImage
+        sha512: c8c7c0b810f7ded363b2aadcd6efdd26c2e5198833a06788fb3eb75d6edf315a188b046dea759b5adb2b0f2952b651a4faef5f5c416d44f8fb673e68f0637faa
         dest-filename: dbgate.AppImage
 
       - type: file
         path: org.dbgate.DbGate.metainfo.xml
-
 
       - type: file
         path: dbgate.sh
