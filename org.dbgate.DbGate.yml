@@ -17,8 +17,15 @@ modules:
   - name: dbgate
     buildsystem: simple
     build-commands:
+      # - chmod +x dbgate.AppImage
+      # - ./dbgate.AppImage --appimage-extract
+
       - chmod +x dbgate.AppImage
-      - ./dbgate.AppImage --appimage-extract
+      # The AppImage’s own extractor chokes on zstd.  Use the SDK one instead.
+      - |
+          OFFSET=$(./dbgate.AppImage --appimage-offset)
+          unsquashfs -o "$OFFSET" -d squashfs-root dbgate.AppImage
+      - install -D -t /app squashfs-root/*
 
       - desktop-file-edit --set-icon ${FLATPAK_ID} --set-key Exec --set-value 'dbgate
         %u' squashfs-root/dbgate.desktop
