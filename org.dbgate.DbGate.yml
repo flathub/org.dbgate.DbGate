@@ -53,14 +53,14 @@ modules:
         only-arches: [x86_64]
         url: https://github.com/dbgate/dbgate/releases/download/v6.4.0/dbgate-6.4.0-linux_x86_64.AppImage
         # url: file:///home/jena/jenasoft/dbgate/app/dist/dbgate-5.0.0-alpha.1-linux_x86_64.AppImage
-        sha256: 0236fe539d0be4d2c081cfcabcb4b928dfe32f253b12e071d377d1b3d6ee70e5
+        sha256: bda407b6a1d4806b56ed6f7743d5730aa959c83dc4d5ca1c57cfb57baf7a463f
         dest-filename: dbgate.AppImage
         
       - type: file
         only-arches: [aarch64]
 
         url: https://github.com/dbgate/dbgate/releases/download/v6.4.0/dbgate-6.4.0-linux_arm64.AppImage
-        sha256: 3f594fa1361fb3365565dc0d0e3b93b761f8327d83fa91049dfb90886ab2187a
+        sha256: a35c3ed0a51ab506cc38895594807abaa91c2075b240f64ff3d915930421c85d
         dest-filename: dbgate.AppImage
 
       - type: file
