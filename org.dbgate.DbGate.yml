@@ -51,16 +51,16 @@ modules:
     sources:
       - type: file
         only-arches: [x86_64]
-        url: https://github.com/dbgate/dbgate/releases/download/v7.1.8/dbgate-7.1.8-linux_x86_64.AppImage
+        url: https://github.com/dbgate/dbgate/releases/download/v7.2.0/dbgate-7.2.0-linux_x86_64.AppImage
         # url: file:///home/jena/jenasoft/dbgate/app/dist/dbgate-5.0.0-alpha.1-linux_x86_64.AppImage
-        sha256: 181b4c9b29949a3b051d42d6429da57b088b75b3f2c553814b1281bdcd7bcc79
+        sha256: 261b645daa4fc37e37da4c85f76c54f4d7e685ce5216635a335c76ee9a6c0042
         dest-filename: dbgate.AppImage
         
       - type: file
         only-arches: [aarch64]
 
-        url: https://github.com/dbgate/dbgate/releases/download/v7.1.8/dbgate-7.1.8-linux_arm64.AppImage
-        sha256: a0d87b48b75aca87ebf7e0c940004d1d382b24f3523c9aedb9668addbbedcabc
+        url: https://github.com/dbgate/dbgate/releases/download/v7.2.0/dbgate-7.2.0-linux_arm64.AppImage
+        sha256: sha256:933a4bcbf7b9cfdedf6779dbfd2facdb8b387d2b0f19a1c5e8cb1a85b04e9da2
         dest-filename: dbgate.AppImage
 
       - type: file
